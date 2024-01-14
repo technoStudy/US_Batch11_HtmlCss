@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700;1,800;1,900&family=Sigmar&display=swap');
+/* Reset styles to ensure consistent sizing across browsers */
+*{  
+    box-sizing: border-box; /* Content, padding and border are included in the element's width and height */  
+  }
+
+/* Body styles */
+ body{
+    font-family: 'Montserrat', sans-serif; /* Sets the default font for the body */
+    padding: 20px; /* Adds space around the content inside of the body element */
+    font-size: 20px; /* Sets the default font size */
+} 
+
+/* Form element styles */
+input,textarea{
+    border: 2px solid rgb(90, 135, 11); /* Sets the border color and size for input and textarea */
+    border-radius: 10px; /* Rounds the corners of input and textarea */
+    padding: 15px; /* Adds space inside input and textarea around the text */
+    width: 100%; /* Makes input and textarea span the full width of their parent container */
+}
+
+/* Button styles */
+button{
+    border: 2px solid rgb(11, 61, 135);/* Sets the border color and size for buttons */
+    border-radius:10px; /* Rounds the corners of buttons */
+    background-color: rgb(43, 226, 171);/* Sets the background color for buttons */
+    padding: 10px 30px;/* Adds space inside buttons around the text */
+    font-size: 30px;/* Sets the font size for text in buttons */
+
+}
+
+/* Header styles */
+.header{
+    display: flex; /* Uses flexbox for layout, which makes it easier to align children elements */
+    align-items: center;/* Vertically centers the items in the header */
+    justify-content: space-between; /* Spaces out the children (title and menu) on the main axis */
+    background-color: rgb(0, 183, 255);/* Sets the background color for the header */
+    border-radius: 40px;/* Rounds the corners of the header */
+    padding: 15px 30px; /* Adds space inside the header around the content */
+  }
+
+  /* Title within the header styles */
+  .header .title{
+    display: flex;/* Uses flexbox for layout to align items */
+    align-items: center;/* Vertically centers the items in the title */
+    gap: 15px;/* Creates space between elements inside the title */
+  }
+
+  /* Content and about me styles */
+  .content .about{
+    display: flex;/* Uses flexbox for layout */
+    padding: 50px;/* Adds space inside the about me section around the content */
+    width: 85%;/* Sets the width of the about me section to 85% of its parent */
+    align-items: center;/* Vertically centers the items in the about me section */
+    justify-items: center; /* Horizontally centers the items in the about me section, used with grid layout */
+    gap: 30px; /*Creates space between elements inside the about me section */
+  }
+
+  /* Image styles within content */
+  .content .about img {
+    width: 300px;/* Sets a fixed width for the image */
+    height: 300px;/* Sets a fixed height for the image to maintain aspect ratio  */
+    border-radius: 250px;/* Makes the image round */
+    border: 5px solid rgb(90, 135, 11) ;/* Sets the border color and size for the image */
+    margin-left: 125px;/* Adds space to the left of the image */
+  }
+/* General content styles */
+  .content{
+    display: flex;/* Uses flexbox for layout */
+    flex-direction: column;/* Stacks the flex items vertically */
+    align-items: center;/* Vertically centers the items in the content section */
+    gap: 30px;/* Creates space between elements inside the content section */
+  }
+
+  /* Styles for h2 span within content, usually for decorative purposes  */
+  .content h2 span {
+    
+    width: 50px; /* Sets a fixed width for the span */
+    height: 50px;/* Sets a fixed height for the span */
+    border-radius: 25px;/* Makes the span round */
+    background-color: blueviolet;/* Sets the background color for the span */
+}
+
+/* Section styles */
+.section {
+    width: 60%;/* Sets the width of the section to 60% of its parent */
+    margin: 0 auto; /* This centers the section in the middle of the page */
+    gap: 20px;/* reates space between elements inside the section */
+    display: flex;/* Uses flexbox for layout */
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  /* Card styles within section */
+.section .card{
+    display: flex;/* Uses flexbox for layout */
+    align-items: center;/* Vertically centers the items in the card*/
+    gap: 20px;/* Creates space between elements inside the card */
+    border: 1px solid rgb(226, 43, 43);/* Sets the border color and size for the card*/
+    border-radius: 20px;/* Rounds the corners of the card */
+    padding: 40px;/* Adds space inside the card around the content*/
+    margin-bottom: 20px; /* Space between cards */
+    box-shadow: 3px 3px 8px gray;/* Adds space below the card*/
+    justify-content: space-between; /* TSpaces out the children (left and right) on the main axis */
+}
+
+/* Left styles within card */
+.section .card .left{
+    flex: 2; /* Allows the left section to grow twice as much as the right*/
+}
+
+/* right styles within card */
+.section .card .right{
+    flex: 1; /* Allows the right section to take up the remaining space */
+}
+
+/* Footer styles */
+.footer{
+    display: flex; /*Uses flexbox for layout */
+    justify-content: space-around; /* Distributes space evenly around items */
+    border-top: 2px dotted gray; /* Adds a dotted border to the top of the footer */
+    color: blueviolet; /* Sets the text color for the footer */
+}
